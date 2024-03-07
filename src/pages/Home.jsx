@@ -26,7 +26,7 @@ const Home = () => {
         <div className='bg-amber-100 h-[90vh] flex flex-col md:flex-row gap-9 justify-center items-center'>
           <img className='w-[300px]' src="/heroImg.webp" alt="" />
           <div className='w-[300px]'>
-            <h1 className='text-5xl font-bold text-amber-800 mb-4'>Lorem ipsum dolor sit Nmit K.</h1>
+            <h1 className='text-5xl font-bold text-amber-800 mb-4'>Awaken Your Senses, One Sip at a Time.</h1>
             {/* <p className=''>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, blanditiis commodi? Nobis, perferendis?</p> */}
             <Button>Buy Your Booster</Button>
           </div>
@@ -37,7 +37,7 @@ const Home = () => {
             <img src="/coffeecup.png" alt="" className='w-[100px] md:w-[200px]' />
             <h3 className='text-3xl font-semibold text-slate-700'>About</h3>
           </div>
-          <p className='w-[300px] text-slate-500'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore molestias possimus fuga ab? Voluptate quisquam, laborum facere hic labore alias, quas vitae veniam autem consequatur earum rem obcaecati, quo praesentium.</p>
+          <p className='w-[300px] text-slate-500'>Coffee seeds originate from the seeds of the Coffea plant, typically Coffea arabica or Coffea robusta species. These plants are native to tropical regions around the world, primarily found in countries within the "Coffee Belt," such as Brazil, Colombia, Ethiopia, and Indonesia.</p>
         </div>
       </section>
 );

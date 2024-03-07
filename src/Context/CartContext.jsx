@@ -30,8 +30,8 @@ export function CartContextProvider({children}) {
     }
 
     function productInfo(id) {
-        const productInfo = coffees.find(product=> product.id === id)
-            if (productInfo === undefined) throw new Error("Product not find!")
+        const productInfo = coffees.find(product=> product.id == id)
+            if (productInfo === undefined) throw new Error("Product not find!") 
     
             return productInfo;
     }

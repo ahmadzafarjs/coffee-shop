@@ -6,6 +6,7 @@ export default function Product({coffee}){
     const { addToCart, getQuantity, deleteFromCart } = useCartContext()
     const productQuantity = getQuantity(coffee.id)
     return <li className={`rounded-lg overflow-hidden ${productQuantity > 0 && "bg-amber-100"} p-3 grid grid-rows-[auto] sm:w-auto  items-start`}>
+        <Button type="link" to={`/coffee/${coffee.id}`}>
         <div className="h-[200px] flex items-center justify-center  bg-slate-0">
             <img src={coffee.image_url} alt="" className="h-[200px] sm:h-auto sm:w-[95%]" />
         </div>
@@ -14,6 +15,7 @@ export default function Product({coffee}){
         <p className="text-xl text-amber-900 italic">{coffee.name}</p>
         <p className="text-slate-700">{coffee.flavor_profile}</p>
         </div>
+        </Button>
         <div className={`grid gap-4 grid-cols-${productQuantity === 0 ? "1" : "2"}`}>
         {productQuantity > 0 && <CartOperations coffee={coffee} />}
         {productQuantity === 0 ? <Button onClick={()=> addToCart(coffee.id)} className='p-3 bg-amber-500 font-semibold text-slate-800'>Add to cart</Button> 
