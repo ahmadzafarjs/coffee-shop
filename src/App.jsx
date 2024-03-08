@@ -7,6 +7,8 @@ import Cart from './pages/Cart'
 import { CartContextProvider } from './Context/CartContext'
 import Products from './pages/Products'
 import SingleCoffee from './pages/SingleCoffee'
+import Checkout from './pages/Checkout'
+import Error404 from './pages/Error404'
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
           <Route path='cart' element={<Cart />} />
           <Route path='coffees' element={<Products />} />
           <Route path='coffee/:id' element={<SingleCoffee />} />
+          <Route path='checkout' element={<Checkout />} />
+          <Route path='*' element={<Error404 />} />
         </Route>
       </Routes>
     </BrowserRouter>

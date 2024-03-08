@@ -3,6 +3,7 @@ import Cart from "../pages/Cart";
 import { fetchCoffee } from "../services/apiProducts";
 
 const CartContext = createContext({
+    
     coffees: [],
     items: [],
     productInfo: ()=> {},
@@ -13,12 +14,19 @@ const CartContext = createContext({
     getTotal: ()=> {},
 })
 export function CartContextProvider({children}) {
+    const [loading, setLoading] = useState(true)
     const [coffees, setCoffees] = useState([])
     const [cart, setCart] = useState([])
     useEffect(()=> {
-        fetchCoffee().then(data=> setCoffees(data))
+        fetchCoffee().then(data=> {
+            setCoffees(data)
+            setLoading(false)
+        })
+        
     }, [])
     const value = {
+        loading,
+        setLoading,
         coffees: coffees,
         items: cart,
         productInfo,

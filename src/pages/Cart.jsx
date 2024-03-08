@@ -12,7 +12,7 @@ export default function Cart() {
         {products?.map(cart=> {
           return <li key={cart.id} className='bg-green-0 gap-3 py-4 grid grid-cols-[auto] sm:grid-cols-[auto_1fr_1fr] border-b-2 sm:border-b-0 items-center px-6'>
             <div className='w-[150px] mr-5'>
-              <img className='w-[180px]' src={cart.image_url} alt="" />
+              <img className='w-[180px] bg-amber-100 rounded' src={cart.image_url} alt="" />
             </div>
             <div className=''>
             <p className='text-xl font-bold text-amber-900'>${cart.price}</p>
@@ -30,7 +30,7 @@ export default function Cart() {
         <h2 className='text-base text-slate-500'>Total</h2>
         <p className='text-amber-900 font-bold text-3xl'>${getTotal()}</p>
         <div className='flex items-center justify-start mt-5 gap-7 '>
-          <Button>Checkout</Button>
+          <Button><Button type="link" to="/checkout">Checkout</Button></Button>
           <Button type="link" to="/coffees">Countinue Shopping</Button>
         </div>
       </div>}

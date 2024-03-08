@@ -8,7 +8,7 @@ export default function Product({coffee}){
     return <li className={`rounded-lg overflow-hidden ${productQuantity > 0 && "bg-amber-100"} p-3 grid grid-rows-[auto] sm:w-auto  items-start`}>
         <Button type="link" to={`/coffee/${coffee.id}`}>
         <div className="h-[200px] flex items-center justify-center  bg-slate-0">
-            <img src={coffee.image_url} alt="" className="h-[200px] sm:h-auto sm:w-[95%]" />
+            <img src={coffee.image_url} alt="" className="h-[300px] bg-amber-100 rounded sm:h-auto sm:w-[95%]" />
         </div>
         <div className="py-3 px-1">
         <h2 className="pl-3 border-l-4 border-amber-400 my-1 text-2xl font-semibold text-amber-900">${coffee.price}</h2> 
