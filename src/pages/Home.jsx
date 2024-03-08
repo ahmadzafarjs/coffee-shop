@@ -24,7 +24,7 @@ const Home = () => {
           <p className='w-[300px] text-slate-500'>Coffee seeds originate from the seeds of the Coffea plant, typically Coffea arabica or Coffea robusta species. These plants are native to tropical regions around the world, primarily found in countries within the "Coffee Belt," such as Brazil, Colombia, Ethiopia, and Indonesia.</p>
         </div>
         {/* Reviews */}
-        <div className='h-[400px] flex flex-col md:flex-row items-center justify-center gap-3'>
+        <div className='h-[900px] md:h-[400px] flex flex-col md:flex-row items-center justify-center gap-3'>
             <Review>
               <Review.Content>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi assumenda unde ut ab atque officia nobis nesciunt minima non recusandae.</Review.Content>
               <Review.Author img="https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg?size=626&ext=jpg&ga=GA1.1.1395880969.1709769600&semt=sph" name="John Doe" />
